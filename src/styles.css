@@ -1,0 +1,27 @@
+/* src/styles.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Override for specific Swiper elements if necessary */
+.swiper-pagination-bullet {
+    background-color: #6b7280; /* Gray bullet */
+}
+.swiper-pagination-bullet-active {
+    background-color: #34d399; /* Green active bullet */
+}
